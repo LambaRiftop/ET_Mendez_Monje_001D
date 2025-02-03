@@ -1,0 +1,30 @@
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto ms-2 mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'index' %}">Inicio<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'info' %}">Informacion</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'galeria' %}">Galeria</a>
+        </li>
+        <li class="nav-item signUp-login">
+            <a class="nav-link" href="{% url 'tienda' %}">Tienda</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active disabled" href="#">USUARIO</a>
+        </li>
+    </ul>
+
+    <!-- Iniciar y registrarse -->
+    <div>
+        <ul class="nav navbar-nav ml-auto">
+            {% if request.session.usuario_id %}
+                <a class="nav-link" href="{% url 'exit' %}">Cerrar sesion</a>
+            {% else %}
+                <a class="nav-link" href="{% url 'login' %}">Iniciar Session</a>
+            {% endif %}
+        </ul>
+    </div>
+</div>

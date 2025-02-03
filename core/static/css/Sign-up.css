@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(168deg, #b38867, #cdcdc0);
+}
+
+.Sign-Up {
+    width: 400px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.Sign-Up h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.Sign-Up form {
+    font-size: 16px;
+}
+
+.Sign-Up form .form-group {
+    margin-bottom: 15px;
+}
+
+.form-inline {
+    display: flex;
+    gap: 10px;
+    /* Espacio entre los campos de nombre y apellido */
+}
+
+.Sign-Up form input[type="submit"] {
+    font-size: 18px;
+    margin-top: 20px;
+    background: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.Sign-Up form input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+.bi {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+    color: #a7a7a7;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Espacio entre el checkbox y el texto */
+}
+
+.form-check-label {
+    font-size: 14px;
+}
+
+/* ErrorField */
+.errorField {
+    border: 2px solid #d9534f !important;
+    background-color: #f8d7da;
+}
+
+.errorField::placeholder {
+    color: #d9534f;
+    opacity: 0.7;
+}
+
+/* Mensaje de error */
+.error-message {
+    font-size: 12px;
+    color: #d9534f;
+    margin-top: 5px;
+    margin-left: 5px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Campo de contraseña admin */
+#adminPasswordField {
+    transition: all 0.3s ease;
+    margin-top: 15px; /* Asegura espacio arriba */
+}
+
+#adminPasswordField input {
+    width: 100%;
+}
+
+/* Switch para admin */
+.form-switch {
+    margin: 10px 0;
+}
+
+.form-switch .form-check-input {
+    margin-left: 0; /* Elimina margen izquierdo predeterminado */
+}
+
+
+/* Botón deshabilitado para prevenir envíos no válidos */
+button:disabled {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+button:enabled {
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+button:enabled:hover {
+    background-color: #0056b3;
+}
+
+div#is-relative {
+    max-width: 420px;
+    position: relative;
+}
+
+.translate-middle-y {
+    left: 330px;
+}
+
+/* Cambiar color del switch activado */
+
+.form-switch .form-check-input:checked + .form-check-label {
+    color: #49545f; /* Azul cuando está activado */
+}

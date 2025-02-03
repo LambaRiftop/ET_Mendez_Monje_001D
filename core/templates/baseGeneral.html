@@ -1,0 +1,26 @@
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto ms-2 mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'index' %}">Inicio<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'login' %}">Informacion</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'login' %}">Galeria</a>
+        </li>
+        <!--<li class="nav-item">
+            <a class="nav-link" href="{% url 'catalogo' %}">Catalogo</a>
+        </li>   revisar detalles dentro del comentario en catalogo.html  -->
+        <li class="nav-item signUp-login">
+            <a class="nav-link" href="{% url 'registro' %}">Registrarse</a>
+        </li>
+    </ul>
+
+    <!-- Iniciar y registrarse -->
+    <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item signIp-login">
+            <a class="nav-link" href="{% url 'login' %}">Iniciar Session</a>
+        </li>
+    </ul>
+</div>

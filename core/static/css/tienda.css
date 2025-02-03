@@ -1,0 +1,29 @@
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
+
+}
+
+.card header{
+    border-bottom: 2px solid rgb(0, 0, 0, 125);
+
+}
+
+.badge {
+    font-size: 0.85rem;
+    padding: 0.5em 0.75em;
+
+}
+
+.btn-cart {
+    transition: all 0.3s ease;
+}
+
+.btn-cart:hover {
+    transform: scale(1.05);
+}

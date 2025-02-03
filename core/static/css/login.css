@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(168deg, #b38867, #cdcdc0);
+}
+
+.login{
+    width: 360px;
+    height: min-content;
+    padding: 20px;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.login h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.login form {
+    font-size: 20px;
+}
+
+.singup-link {
+    font-size: 16px;
+}
+
+.login form .form-group {
+    margin-bottom: 12px;
+}
+
+.login form input[type="submit"] {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.bi{
+    position: absolute;
+    transform: translate(275px, -50px);
+    padding: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #a7a7a7;
+}
+
+.btn{
+    padding-bottom: 10px;
+}
+
+
+.errorField::placeholder {
+    color: #c50707b7;
+}
+.errorField {
+    border: 2px solid #dc3545 !important;
+    background-color: #f8d7da !important;
+}

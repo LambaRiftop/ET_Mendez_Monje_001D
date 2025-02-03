@@ -1,0 +1,16 @@
+.info-tienda h3 {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.info-tienda p {
+    color: black;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.info-tienda img {
+    max-height: 300px;
+    object-fit: cover;
+}

@@ -1,0 +1,87 @@
+/* form_producto.css */
+.form-producto-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.form-producto-container h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.form-producto-container form p {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.form-producto-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #34495e;
+    font-size: 0.95rem;
+}
+
+.form-producto-container input[type="text"],
+.form-producto-container input[type="number"],
+.form-producto-container select,
+.form-producto-container textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #ced4da;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-producto-container input[type="text"]:focus,
+.form-producto-container input[type="number"]:focus,
+.form-producto-container select:focus,
+.form-producto-container textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+
+.form-producto-container textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.form-producto-container select {
+    appearance: none;
+    background: white url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>") no-repeat right 0.75rem center/16px 12px;
+}
+
+
+/* Mensajes de error */
+.form-producto-container .errorlist {
+    color: #e74c3c;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    font-size: 0.9rem;
+    list-style: none;
+}
+
+.form-producto-container .errorlist li::before {
+    content: "⚠ ";
+    margin-right: 0.3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .form-producto-container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .form-producto-container h2 {
+        font-size: 1.5rem;
+    }
+}

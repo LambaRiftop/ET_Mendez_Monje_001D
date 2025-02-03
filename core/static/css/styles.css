@@ -1,0 +1,97 @@
+body {
+    background: #cdcdc0;
+}
+
+/*NOTE Navbar */
+.navbar-custom {
+    background-color: #b38867;
+}
+/*Fin del NavBar*/
+
+
+/*NOTE Carousel */
+.carousel-caption {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 1em;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+}
+
+/* Artesanias del Corazon */
+.carousel-caption h4 {
+    color: paleturquoise;
+    font-size: 3em;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Slogan */
+.carousel-caption p {
+    color: rgb(250, 97, 148);
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+/* Fin del carousel */
+
+
+/*NOTE Inicio Galeria*/
+.c-item {
+    height: 320px;
+}
+
+.imagen {
+    height: 100%;
+    object-fit: cover;
+}
+/*Fin del orden de la galeria*/
+
+
+/*NOTE historia */
+
+.bio img {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+/* historia */
+
+.bio img {
+    max-height: 300px;
+    object-fit: cover;
+    height: 1000px;  /* Ajustar tamaño imagenes */
+}
+
+.bio h3 {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+.bio p {
+    color: black;
+    text-align: center;
+}
+
+/*API*/
+/*!USO EXCLUSIVO DE LA TIENDA Y EL CONSUMO DE LA API*/
+/*?posible desuso a futuro*/
+.bg-custom {
+    background: #cdcdc0;
+}
+
+.color-cuerpo{
+    background: #a5b2b8;
+}
+
+.contenedor {
+    padding: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/*Fin de estilos API*/

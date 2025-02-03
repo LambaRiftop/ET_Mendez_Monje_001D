@@ -1,0 +1,43 @@
+<div>
+  <table class="table table-bordered alert alert-warning">
+    <thead>
+      <tr scope="row" class="text-center">
+        <td colspan="3" class="titulo">Su Carrito</td>
+      </tr>
+      <td class="categorias">Precio</td>
+      <td class="categorias">Cantidad</td>
+    </thead>
+    <tbody>
+      {% if request.session.carrito.items %} {% for key, value in request.session.carrito.items %}
+      <tr>
+        <td class="descripciones">{{ value.precio }}</td>
+        <td class="descripciones">
+          {{ value.cantidad }}
+          <br />
+          <a href="{% url 'agregar' value.codigo %}" class="badge btn btn-success">+</a>
+          <a href="{% url 'restar' value.codigo %}" class="badge btn btn-danger">-</a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Total:</th>
+        <td colspan="2">$ {{ value.total }}</td>
+      </tr>
+      {% endfor %} {% else %}
+      <tr>
+        <td colspan="3">
+          <div class="alert alert-info text-center nProduct">Sin productos</div>
+        </td>
+      </tr>
+      {% endif %}
+    </tbody>
+  </table>
+  <br />
+</div>
+<div class="row text-center">
+  <div class="col-6">
+    <a href="{% url 'limpiar' %}" class="btn btn-warning">Limpiar</a>
+  </div>
+  <div class="col-6">
+    <a href="{% url 'generarBoleta' %}" class="btn btn-primary">Comprar</a>
+  </div>
+</div>
